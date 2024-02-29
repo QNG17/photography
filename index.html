@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A collection of Landscape and portrait photography">
     <meta name="author" content="Quan Nguyen">
-    
-    <!-- CSS here -->
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/slicknav.css" type="text/css">
@@ -26,7 +26,7 @@
 
     <!-- This JS script changes the text font to tan and add a black opaque background around it. -->
     <!-- Type is unnecessary for javacript-->
-    <script> 
+    <script>
         $(document).ready(function() {
             $("h3").css("background-color", "rgba(0, 0, 0, 0.5)");
             $("h3").css("color", "tan");
@@ -43,7 +43,7 @@
         </div>
     </div>
     <!-- Preloader End-->
-    <!-- Header Start-->
+    <!-- Header Start -->
     <header>
         <div class="header-area">
             <div class="main-header header-sticky">
@@ -68,44 +68,60 @@
                             </nav>
                             </div>
                         </div>
-                        <!-- Mobile Menu -->
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
+            <!-- Mobile Menu -->
+            <div class="col-12">
+                <div class="mobile_menu d-block d-lg-none"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Header End -->
+</header>
+<main>
+    <!-- Start slider -->
+    <div class="slider-area">
+        <div class="slider-item-active">
+            <!-- Single -->
+            <div class="slider-item">
+                <div class="slider-bg1 slider-height slider-bg1 d-flex align-items-center ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-9 col-lg-10">
+                                <div class="slide-content">
+                                    <h1>Welcome to Moonlight Photography</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Content -->
+                <div class="slider-caption2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-7 col-sm-8">
+                                <div class="slide-content2">
+                                    <h4><span>Olympus OM-D E-M10 Mark I</span></h4>
+                                    <p>Florida, lens: M.Zuiko 26mm f1.3</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-<main>
-    <section class="slider-area slider-area2 slider-height2 d-flex align-items-center hero-overly">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-8 col-lg-11 col-md-12">
-                    <div class="hero__caption hero__caption2 text-center">
-                        <h2>Gallery</h2>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </section>
-    <!-- Header End-->
-    <!-- Gallery Area Start -->
-    <div class="center"> <!-- Clicking on the category will sort the images -->
-        <button class="btn" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('bridge')">Bridges</button>
-        <button class="btn" onclick="filterSelection('beach')">Beach</button>
-        <button class="btn" onclick="filterSelection('street')">Street Photograpy</button>
-        <button class="btn" onclick="filterSelection('food')">Food</button>
-        <button class="btn" onclick="filterSelection('misc')">Miscellaneous</button>
+        <!-- Dot - image -->
+        <div class="slider-nav text-center">
+        </div>
     </div>
-    <!-- Clicking on the location's name will lead you to it's website -->
-    <div class="gallery-area section-padding2">
-        <div class="container">
+    <!-- End Start slider -->
+    <!-- Gallery Area Start/clicking on the location's name will lead you to it's website -->
+    <div class="gallery-area section-padding">
+        <div class="container"> 
             <div class="row justify-content-between">
-                <div class=" column bridge">
+                <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
-                        <div class="gallery-img small-img " style="background-image: url(./assets/img/gallery/bridge.jpg);"></div>
+                        <div class="gallery-img small-img " style="background-image: url(assets/img/gallery/bridge.jpg);"></div>
                         <h3 class="description"><a href="https://www.tampa.gov/" target="_blank">Tampa City, Florida</a></h3>
                         <div class="overlay">
                             <div class="overlay-content">
@@ -114,98 +130,50 @@
                         </div>
                     </div>
                 </div>
-                <div class="column food">
+                <div class="col-xl-7 col-lg-7 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
-                        <div class="gallery-img small-img " style="background-image: url(./assets/img/gallery/clams.jpg);"></div>
-                        <h3 class="description"><a href="https://www.yelp.com/biz/oc-and-lau-restaurant-garden-grove" target="_blank">Garden Grove, California</a></h3>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <a href="./assets/img/gallery/clams.jpg" class="img-pop-up"><i class="ti-zoom-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column beach">
-                    <div class="box snake mb-30">
-                        <div class="gallery-img small-img " style="background-image: url(./assets/img/gallery/sunset.jpg);"></div>
-                        <h3 class="description"><a href="https://www.visitstpeteclearwater.com/article/fort-de-soto-park" target="_blank">Fort De Soto Park, Florida</a></h3>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <a href="./assets/img/gallery/sunset.jpg" class="img-pop-up"><i class="ti-zoom-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column beach">
-                    <div class="box snake mb-30">
-                        <div class="gallery-img small-img " style="background-image: url(./assets/img/gallery/sunset_2.jpg);"></div>
-                        <h3 class="description"><a href="https://www.floridastateparks.org/honeymoonisland" target="_blank">Honeymoon Island State Park, Florida</a></h3>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <a href="./assets/img/gallery/sunset_2.jpg" class="img-pop-up"><i class="ti-zoom-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column street">
-                    <div class="box snake mb-30">
-                        <div class="gallery-img small-img " style="background-image: url(./assets/img/gallery/street.jpg);"></div>
+                        <div class="gallery-img small-img " style="background-image: url(assets/img/gallery/street.jpg);"></div>
                         <h3 class="description"><a href="https://www.tampa.gov/" target="_blank">Tampa City, Florida</a></h3>
                         <div class="overlay">
                             <div class="overlay-content">
-                                <a href="./assets/img/gallery/street.jpg" class="img-pop-up"><i class="ti-zoom-in"></i></a>
+                                <a href="assets/img/gallery/street.jpg" class="img-pop-up"><i class="ti-zoom-in"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="column street">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
-                        <div class="gallery-img small-img " style="background-image: url(./assets/img/gallery/rain.jpg);"></div>
-                        <h3 class="description"><a href="#" target="_blank">Tampa City, Florida</a></h3>
+                        <div class="gallery-img small-img " style="background-image: url(assets/img/gallery/sunset.jpg);"></div>
+                        <h3 class="description"><a href="https://www.visitstpeteclearwater.com/article/fort-de-soto-park" target="_blank">Fort De Soto Park, Florida</a></h3>
                         <div class="overlay">
                             <div class="overlay-content">
-                                <a href="./assets/img/gallery/rain.jpg" class="img-pop-up"><i class="ti-zoom-in"></i></a>
+                                <a href="assets/img/gallery/sunset.jpg" class="img-pop-up"><i class="ti-zoom-in"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="column food">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
-                        <div class="gallery-img small-img " style="background-image: url(./assets/img/gallery/food.jpg);"></div>
+                        <div class="gallery-img small-img " style="background-image: url(assets/img/gallery/food.jpg);"></div>
                         <h3 class="description"><a href="https://www.yelp.com/biz/oc-and-lau-restaurant-garden-grove" target="_blank">Garden Grove, California</a></h3>
                         <div class="overlay">
                             <div class="overlay-content">
-                                <a href="./assets/img/gallery/food.jpg" class="img-pop-up"><i class="ti-zoom-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column bridge">
-                    <div class="box snake mb-30">
-                        <div class="gallery-img small-img " style="background-image: url(./assets/img/gallery/bridge_2.jpg);"></div>
-                        <h3 class="description"><a href="https://www.capecodbeachsand.com/Cape-Cod-Beaches/Public-Access-Beach/View/BeachID/121/Grays-Beach" target="_blank">Yarmouth, Massachusetts</a></h3>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <a href="./assets/img/gallery/bridge_2.jpg" class="img-pop-up"><i class="ti-zoom-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column misc">
-                    <div class="box snake mb-30">
-                        <div class="gallery-img small-img " style="background-image: url(./assets/img/gallery/niagara_falls.jpg);"></div>
-                        <h3 class="description"><a href="https://www.niagarafallsstatepark.com/" target="_blank">Niagara Falls, New York</a></h3>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <a href="./assets/img/gallery/niagara_falls.jpg" class="img-pop-up"><i class="ti-zoom-in"></i></a>
+                                <a href="assets/img/gallery/food.jpg" class="img-pop-up"><i class="ti-zoom-in"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-btn text-center mt-50">
+                        <a href="gallery.html" class="border-btn">More Photos</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-<!-- Gallery Area End -->
+    <!-- Gallery Area End -->
 </main>
 <footer>
  <div class="footer-wrappper">
@@ -238,13 +206,13 @@
                                 <a href="mailto:nguyeq01@email.franklin.edu">nguyeq01@email.franklin.edu</a> <br>
                                 <a href="sitemap.html"><u>Sitemap</u></a>
                             </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 </footer>
 
 <!-- Scroll Up -->
@@ -268,7 +236,6 @@
 <script src="./assets/js/animate.min.js"></script>
 <script src="./assets/js/animated.headline.js"></script>
 <script src="./assets/js/jquery.magnific-popup.js"></script>
-<script src="./assets/js/filterSelection.js"></script>
 
 <!-- Date Picker -->
 <script src="./assets/js/gijgo.min.js"></script>
