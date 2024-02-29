@@ -1,0 +1,299 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <title> Moonlight Photography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A collection of Landscape and portrait photography">
+    <meta name="author" content="Quan Nguyen">
+    
+    <!-- CSS here -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/slicknav.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/hamburgers.min.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/animated-headline.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/slick.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/styles.css" type="text/css">
+
+    <!-- jQuery/Type is unnecessary for javacript-->
+    <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js"></script>
+    <script src="https://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.js"></script>
+
+    <!-- This JS script changes the text font to tan and add a black opaque background around it. -->
+    <!-- Type is unnecessary for javacript-->
+    <script> 
+        $(document).ready(function() {
+            $("h3").css("background-color", "rgba(0, 0, 0, 0.5)");
+            $("h3").css("color", "tan");
+        });
+    </script>
+</head>
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader End-->
+    <!-- Header Start-->
+    <header>
+        <div class="header-area">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-9 col-lg-10">
+                            <div class="main-menu black-menu menu-bg-white d-none d-lg-block">
+                                <div class="hamburger hamburger--collapse">
+                                    <div class="hamburger-box">
+                                        <div class="hamburger-inner"></div>
+                                    </div>
+                                </div>
+                            <nav class="hamburger-menu">
+                                <ul id="navigation">
+                                    <li><a href="home.html">Home</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="gears.html">Gears</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="contact.html">contact</a></li>
+                                </ul>
+                            </nav>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<main>
+    <section class="slider-area slider-area2 slider-height2 d-flex align-items-center hero-overly">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-11 col-md-12">
+                    <div class="hero__caption hero__caption2 text-center">
+                        <h2>Gallery</h2>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <!-- Header End-->
+    <!-- Gallery Area Start -->
+    <div class="center"> <!-- Clicking on the category will sort the images -->
+        <button class="btn" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('bridge')">Bridges</button>
+        <button class="btn" onclick="filterSelection('beach')">Beach</button>
+        <button class="btn" onclick="filterSelection('street')">Street Photograpy</button>
+        <button class="btn" onclick="filterSelection('food')">Food</button>
+        <button class="btn" onclick="filterSelection('misc')">Miscellaneous</button>
+    </div>
+    <!-- Clicking on the location's name will lead you to it's website -->
+    <div class="gallery-area section-padding2">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class=" column bridge">
+                    <div class="box snake mb-30">
+                        <div class="gallery-img small-img " style="background-image: url(./assets/img/gallery/bridge.jpg);"></div>
+                        <h3 class="description"><a href="https://www.tampa.gov/" target="_blank">Tampa City, Florida</a></h3>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <a href="assets/img/gallery/bridge.jpg" class="img-pop-up"><i class="ti-zoom-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column food">
+                    <div class="box snake mb-30">
+                        <div class="gallery-img small-img " style="background-image: url(./assets/img/gallery/clams.jpg);"></div>
+                        <h3 class="description"><a href="https://www.yelp.com/biz/oc-and-lau-restaurant-garden-grove" target="_blank">Garden Grove, California</a></h3>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <a href="./assets/img/gallery/clams.jpg" class="img-pop-up"><i class="ti-zoom-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column beach">
+                    <div class="box snake mb-30">
+                        <div class="gallery-img small-img " style="background-image: url(./assets/img/gallery/sunset.jpg);"></div>
+                        <h3 class="description"><a href="https://www.visitstpeteclearwater.com/article/fort-de-soto-park" target="_blank">Fort De Soto Park, Florida</a></h3>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <a href="./assets/img/gallery/sunset.jpg" class="img-pop-up"><i class="ti-zoom-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column beach">
+                    <div class="box snake mb-30">
+                        <div class="gallery-img small-img " style="background-image: url(./assets/img/gallery/sunset_2.jpg);"></div>
+                        <h3 class="description"><a href="https://www.floridastateparks.org/honeymoonisland" target="_blank">Honeymoon Island State Park, Florida</a></h3>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <a href="./assets/img/gallery/sunset_2.jpg" class="img-pop-up"><i class="ti-zoom-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column street">
+                    <div class="box snake mb-30">
+                        <div class="gallery-img small-img " style="background-image: url(./assets/img/gallery/street.jpg);"></div>
+                        <h3 class="description"><a href="https://www.tampa.gov/" target="_blank">Tampa City, Florida</a></h3>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <a href="./assets/img/gallery/street.jpg" class="img-pop-up"><i class="ti-zoom-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column street">
+                    <div class="box snake mb-30">
+                        <div class="gallery-img small-img " style="background-image: url(./assets/img/gallery/rain.jpg);"></div>
+                        <h3 class="description"><a href="#" target="_blank">Tampa City, Florida</a></h3>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <a href="./assets/img/gallery/rain.jpg" class="img-pop-up"><i class="ti-zoom-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column food">
+                    <div class="box snake mb-30">
+                        <div class="gallery-img small-img " style="background-image: url(./assets/img/gallery/food.jpg);"></div>
+                        <h3 class="description"><a href="https://www.yelp.com/biz/oc-and-lau-restaurant-garden-grove" target="_blank">Garden Grove, California</a></h3>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <a href="./assets/img/gallery/food.jpg" class="img-pop-up"><i class="ti-zoom-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column bridge">
+                    <div class="box snake mb-30">
+                        <div class="gallery-img small-img " style="background-image: url(./assets/img/gallery/bridge_2.jpg);"></div>
+                        <h3 class="description"><a href="https://www.capecodbeachsand.com/Cape-Cod-Beaches/Public-Access-Beach/View/BeachID/121/Grays-Beach" target="_blank">Yarmouth, Massachusetts</a></h3>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <a href="./assets/img/gallery/bridge_2.jpg" class="img-pop-up"><i class="ti-zoom-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column misc">
+                    <div class="box snake mb-30">
+                        <div class="gallery-img small-img " style="background-image: url(./assets/img/gallery/niagara_falls.jpg);"></div>
+                        <h3 class="description"><a href="https://www.niagarafallsstatepark.com/" target="_blank">Niagara Falls, New York</a></h3>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <a href="./assets/img/gallery/niagara_falls.jpg" class="img-pop-up"><i class="ti-zoom-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Gallery Area End -->
+</main>
+<footer>
+ <div class="footer-wrappper">
+    <!-- Footer Start-->
+    <div class="footer-area footer-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="single-footer-caption mb-50 text-center">
+                        <!-- social -->
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer-bottom area -->
+    <div class="footer-bottom-area">
+        <div class="container">
+            <div class="footer-border">
+                <div class="row d-flex align-items-center">
+                    <div class="col-xl-12 ">
+                        <div class="footer-copy-right text-center">
+                            <p>Copyright @ 2022 Moonlight Photography <br>
+                                <a href="mailto:nguyeq01@email.franklin.edu">nguyeq01@email.franklin.edu</a> <br>
+                                <a href="sitemap.html"><u>Sitemap</u></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+<!-- Scroll Up -->
+<div id="back-top" >
+    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+</div>
+
+<!-- JS here -->
+<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+<!-- Jquery, Popper, Bootstrap -->
+<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<!-- Jquery Mobile Menu -->
+<script src="./assets/js/jquery.slicknav.min.js"></script>
+
+<!-- Jquery Slick , Owl-Carousel Plugins -->
+<script src="./assets/js/owl.carousel.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
+<!-- One Page, Animated-HeadLin -->
+<script src="./assets/js/animate.min.js"></script>
+<script src="./assets/js/animated.headline.js"></script>
+<script src="./assets/js/jquery.magnific-popup.js"></script>
+<script src="./assets/js/filterSelection.js"></script>
+
+<!-- Date Picker -->
+<script src="./assets/js/gijgo.min.js"></script>
+<!-- Nice-select, sticky -->
+<script src="./assets/js/jquery.nice-select.min.js"></script>
+<script src="./assets/js/jquery.sticky.js"></script>
+<!-- Progress -->
+<script src="./assets/js/jquery.barfiller.js"></script>
+
+<!-- counter , waypoint,Hover Direction -->
+<script src="./assets/js/jquery.counterup.min.js"></script>
+<script src="./assets/js/waypoints.min.js"></script>
+<script src="./assets/js/jquery.countdown.min.js"></script>
+<script src="./assets/js/hover-direction-snake.min.js"></script>
+
+<!-- contact js -->
+<script src="./assets/js/contact.js"></script>
+<script src="./assets/js/jquery.form.js"></script>
+<script src="./assets/js/jquery.validate.min.js"></script>
+<script src="./assets/js/mail-script.js"></script>
+<script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+<!-- Jquery Plugins, main Jquery -->	
+<script src="./assets/js/plugins.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</body>
+</html>
